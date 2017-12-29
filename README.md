@@ -8,6 +8,7 @@ Smart Image View for Android where you can add multiple images and choose the sh
 # Integration
 
 <b>Gradle</b>
+
 Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
@@ -25,6 +26,7 @@ Step 2. Add the dependency
 	}
 
 <b>Maven</b>
+
 Step 1. Add the JitPack repository to your build file
 	
 	<repositories>
