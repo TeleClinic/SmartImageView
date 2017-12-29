@@ -6,6 +6,8 @@ Smart Image View for Android where you can add multiple images and choose the sh
 <img src="Screenshot_20171229-115827.png" height="400" />
 
 # Integration
+
+<b>Gradle</b>
 Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
@@ -21,7 +23,8 @@ Step 2. Add the dependency
 	dependencies {
 	        compile 'com.github.TeleClinic:SmartImageView:1.0.0'
 	}
-	
+
+<b>Maven</b>
 Step 1. Add the JitPack repository to your build file
 	
 	<repositories>
@@ -42,6 +45,7 @@ Step 2. Add the dependency
 # How to Use
 
 Only thing you have to do is giving as many URLs as you want to the Layout with putImages function. Shape and size can be arranged via XML file. 
+In XML:
 
     <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
         android:id="@+id/images1"
@@ -59,6 +63,8 @@ Only thing you have to do is giving as many URLs as you want to the Layout with 
         android:layout_gravity="center"
         app:shape="CIRCLE"/>
 	
+In Activity:
+
 	images1.putImages(url1, url2, ...)
 	images2.putImages(url1)
 	
