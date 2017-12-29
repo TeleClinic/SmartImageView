@@ -17,4 +17,4 @@ Step 2. Add the dependency
 	        compile 'com.github.TeleClinic:SmartImageView:1.0.0'
 	}
 # Screenshot
-<img src="Screenshot_20171229-115827.png" width="200" height="400" />
+<img src="Screenshot_20171229-115827.png" height="400" />
