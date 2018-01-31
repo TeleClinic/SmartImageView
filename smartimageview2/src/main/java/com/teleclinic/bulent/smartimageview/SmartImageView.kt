@@ -35,8 +35,8 @@ class SmartImageView : ImageView {
                 .load(url)
                 .asBitmap()
                 .centerCrop()
-                .placeholder(R.drawable.person_image_empty)
-                .error(R.drawable.person_image_empty)
+                .placeholder(R.drawable.empty_placeholder_user)
+                .error(R.drawable.empty_placeholder_user)
                 .into(this)
     }
 }
