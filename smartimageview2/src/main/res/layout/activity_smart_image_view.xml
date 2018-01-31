@@ -5,6 +5,7 @@
     android:id="@+id/cardView"
     android:layout_width="10dp"
     android:layout_height="10dp"
+    app:cardElevation="0dp"
     android:padding="0dp">
 
     <LinearLayout
