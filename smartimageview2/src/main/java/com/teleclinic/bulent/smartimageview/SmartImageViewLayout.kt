@@ -55,18 +55,24 @@ class SmartImageViewLayout : FrameLayout {
         when (count) {
             1 -> {
                 smartImageView1.putImage(urls[0])
+                textView.visibility = View.GONE
                 linearLayout1.visibility = View.GONE
                 frameLayout1.visibility = View.GONE
             }
             2 -> {
                 smartImageView1.putImage(urls[0])
                 smartImageView2.putImage(urls[1])
+                textView.visibility = View.GONE
+                linearLayout1.visibility = View.VISIBLE
                 frameLayout1.visibility = View.GONE
             }
             3 -> {
                 smartImageView1.putImage(urls[0])
                 smartImageView2.putImage(urls[1])
                 smartImageView3.putImage(urls[2])
+                textView.visibility = View.GONE
+                linearLayout1.visibility = View.VISIBLE
+                frameLayout1.visibility = View.VISIBLE
             }
             else -> {
                 smartImageView1.putImage(urls[0])
@@ -74,6 +80,8 @@ class SmartImageViewLayout : FrameLayout {
                 smartImageView3.putImage(urls[2])
                 textView.text = "+${count - 3}"
                 textView.visibility = View.VISIBLE
+                linearLayout1.visibility = View.VISIBLE
+                frameLayout1.visibility = View.VISIBLE
             }
         }
     }
