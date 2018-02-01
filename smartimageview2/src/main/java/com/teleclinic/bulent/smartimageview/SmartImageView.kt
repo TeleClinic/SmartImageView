@@ -4,6 +4,8 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+
 
 class SmartImageView : ImageView {
 
@@ -35,10 +37,10 @@ class SmartImageView : ImageView {
                 .load(url)
                 .asBitmap()
                 .centerCrop()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .dontAnimate()
                 .placeholder(R.drawable.empty_placeholder_user)
                 .error(R.drawable.empty_placeholder_user)
                 .into(this)
-
-        this.layout(0,0,0,0)
     }
 }
