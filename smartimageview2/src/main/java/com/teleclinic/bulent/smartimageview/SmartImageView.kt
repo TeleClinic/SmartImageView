@@ -13,6 +13,7 @@ class SmartImageView : ImageView {
     private var attrs: AttributeSet? = null
     private var styleAttr: Int? = null
 
+
     constructor(context: Context) : super(context) {
         init(context, null, null)
     }
@@ -31,6 +32,7 @@ class SmartImageView : ImageView {
         this.styleAttr = defStyleAttr
         //readAttributes()
     }
+
 
     fun putImage(url: String) {
         Glide.with(mContext)
