@@ -22,7 +22,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.TeleClinic:SmartImageView:1.0.0'
+	        compile 'com.github.TeleClinic:SmartImageView:1.0.8'
 	}
 
 <b>Maven</b>
@@ -41,7 +41,7 @@ Step 2. Add the dependency
 	<dependency>
 	    <groupId>com.github.TeleClinic</groupId>
 	    <artifactId>SmartImageView</artifactId>
-	    <version>1.0.0</version>
+	    <version>1.0.8</version>
 	</dependency>
 	
 # How to Use
