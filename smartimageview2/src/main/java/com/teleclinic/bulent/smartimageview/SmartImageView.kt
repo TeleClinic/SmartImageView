@@ -4,7 +4,8 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.ImageView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.Priority
+import com.bumptech.glide.request.RequestOptions
 
 
 class SmartImageView : ImageView {
@@ -35,14 +36,19 @@ class SmartImageView : ImageView {
 
 
     fun putImage(url: String) {
-        Glide.with(mContext)
-                .load(url)
-                .asBitmap()
+
+        val glideThumbnailOptions = RequestOptions()
                 .centerCrop()
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .dontAnimate()
-                .placeholder(R.drawable.empty_placeholder_user)
-                .error(R.drawable.empty_placeholder_user)
+                .override(100,0)
+                .placeholder(R.color.gray_minus_4)
+                .error(R.color.gray_minus_4)
+                .priority(Priority.NORMAL)
+
+        mContext?.let {
+            Glide.with(it)
+                .load(url)
+                .apply(glideThumbnailOptions)
                 .into(this)
+        }
     }
 }
