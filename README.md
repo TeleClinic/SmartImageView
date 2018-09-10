@@ -41,7 +41,7 @@ Step 2. Add the dependency
 	<dependency>
 	    <groupId>com.github.TeleClinic</groupId>
 	    <artifactId>SmartImageView</artifactId>
-	    <version>1.0.8</version>
+	    <version>1.1.0</version>
 	</dependency>
 	
 # How to Use
