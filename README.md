@@ -1,5 +1,5 @@
 # SmartImageView [![](https://jitpack.io/v/TeleClinic/SmartImageView.svg)](https://jitpack.io/#TeleClinic/SmartImageView)
-Smart Image View for Android where you can add multiple images and choose the shape and size
+Smart Image View for Android where you can add multiple images and choose the shape (circle or square) and the size.
 
 
 # Screenshot
@@ -70,4 +70,4 @@ In Activity:
 	images1.putImages(url1, url2, ...)
 	images2.putImages(url1)
 	
-Library being used to show pictures is Glide (https://github.com/bumptech/glide).
+Library being used to show pictures is *Glide 4* (https://github.com/bumptech/glide).
